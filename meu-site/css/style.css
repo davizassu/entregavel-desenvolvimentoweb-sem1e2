@@ -1,0 +1,81 @@
+/* 1. Fundo da página (Cor de areia clara para contrastar com o formulário) */
+body {
+    background-color: #f4f1ea; 
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* 2. O Container (De fora para dentro) */
+.container-formulario {
+    max-width: 600px;             /* Largura máxima solicitada */
+    margin: 40px auto;            /* Centra o formulário no ecrã */
+    padding: 30px;                /* Espaçamento interno */
+    background-color: #ffffff;    /* Fundo branco (diferente da página) */
+    border-radius: 8px;           /* Cantos arredondados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra suave estilo fotografia */
+    
+    /* Organização Flexbox em coluna */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;                    /* Espaço entre cada campo */
+}
+
+/* 3. O Bónus (Nome e E-mail lado a lado) */
+.linha-dupla {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Garante que o Nome e o E-mail ocupem metades iguais do espaço */
+.linha-dupla .campo {
+    flex: 1; 
+}
+
+/* 4. Organização interna de cada campo (Label em cima, Input em baixo) */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* 5. Estilização dos elementos visuais (<label>, <input>, <select>, <textarea>) */
+label {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fafafa;
+}
+
+/* Efeito ao clicar no campo (Outline) */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #0077b6; /* Azul oceano ao focar */
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.3);
+}
+
+/* 6. Botão de Enviar com destaque visual */
+button {
+    background-color: #0077b6;    /* Cor principal de destaque */
+    color: #ffffff;               /* Texto branco */
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;              /* Muda o ícone do rato para a "mãozinha" */
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Dica da atividade: Efeito Hover */
+button:hover {
+    background-color: #023e8a;    /* Azul mais escuro quando o rato passa por cima */
+}
