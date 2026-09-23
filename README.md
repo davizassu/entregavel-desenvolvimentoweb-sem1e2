@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Um projeto prático de desenvolvimento web construído para aplicar e treinar conceitos fundamentais de HTML semântico e estilização avançada com CSS. O site funciona como um portfólio de estudos, documentando a jornada de aprendizado em tecnologia, e oferece um espaço interativo de contato focado na comunidade "Coffee & Code".
+Um projeto prático de desenvolvimento web construído para aplicar e treinar conceitos fundamentais de HTML semântico e estilização avançada com CSS. O site funciona como um portfólio de estudos, documentando a jornada de aprendizado em tecnologia, e oferece um espaço interativo de contato focado em interação com novos usuários. 
 
 ## Funcionalidades e Tecnologias
 
